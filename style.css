@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-change: #3DD1E7;
+}
+
+#container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #7575ed;
+  overflow-y: auto;
+  position: absolute;
+}
+
+.column {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  min-width: 250px;
+  margin: 0 10px 0 10px;
+  height: 95%;
+  background-color: white;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.column::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+}
+
+.column::-webkit-scrollbar-track {
+  background: white;
+}
+
+.column::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+.column::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
+#addColumn {
+  margin: 0 10px 0 10px;
+}
+
+.card {
+  resize: none;
+  width: 248px;
+  height: 75px;
+}
+
+.title {
+  width: 248px;
+  height: 20px;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  resize: none;
+  font-weight: bold;
+}
+
+.drop-container {
+  height: 75px;
+  background: gray;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addCard {
+  width: 100%;
+  height: 30px;
+  background-color: var(--color-change);
+  border: none;
+  cursor: pointer;
+}
+
+.addCard:hover {
+  background-color: #414242;
+  color: white;
+}
+
+#menu {
+  min-width: 75px;
+  max-width: 75px;
+  height: 100%;
+  background: var(--color-change);
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-img {
+  width: 100%;
+  cursor: pointer;
+}
+
+
+.card {
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+
+  .thumbnails-list {
+    cursor: pointer;
+  }
+}
+
+.card:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.card:focus {
+  cursor: text;
+}
+
+.inputColor {
+  border: 6px solid;
+  border-radius: 13px;
+  height: 49px;
+  padding: 0;
+  width: 47px;
+}
+
+.deleteColumn {
+  display: flex;
+  justify-content: center;
+  background: var(--color-change);
+  color: white;
+  border: 1px solid black;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.menuColumn {
+  display: flex;
+}
+
+#color-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CSS Button New Column*/
+.button-53 {
+  background-color: var(--color-change);
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 200px;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-53:focus {
+  outline: 0;
+}
+
+.button-53:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-53 {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}

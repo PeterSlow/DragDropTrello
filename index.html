@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../node_modules/all-animation/dist/all-animation.min.css">
+
+  <script src="script.js" defer></script>
+  <title>Notas App</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="menu">
+      <div ondrop="deleteCard(this)" ondragover="allowDrop(event)">
+        <img class="menu-img" src="./img/papelera.png" alt="eliminar">
+      </div>
+      <div id="color-div">
+        <h3>Color 1</h3>
+        <input type="color" id="color1" class="inputColor" value="#7575ed">
+        <h3>Color 2</h3>
+        <input type="color" id="color2" class="inputColor" value="#3DD1E7">
+      </div>
+    </div>
+    <button id="addColumn" class="button-53">Añadir nueva lista</button>
+  </div>
+  <audio id="paperSound" src="./sound/000215105_prev.mp3"></audio>
+</body>
+
+</html>
